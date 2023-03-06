@@ -10,7 +10,7 @@ var guess,_userPrevNum;
 var _previousGuess = [];
 var count = 10;
 var randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log(randomNumber);
+// console.log(randomNumber);
 
 function getGuess(){
     guess = document.getElementById("guess_num").value;
