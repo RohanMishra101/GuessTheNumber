@@ -17,8 +17,8 @@ function getGuess(){
     if (guess) {
         count--;
         _previousGuess.push(guess);
-        console.log(guess);
-        console.log(_previousGuess);
+        // console.log(guess);
+        // console.log(_previousGuess);
         checkNum();
     }
     // checkNum();
