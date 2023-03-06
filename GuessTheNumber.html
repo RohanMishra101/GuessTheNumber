@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guessTheNumber.css">
+</head>
+<body>
+    <h1 class="header">Guess The Number</h1>
+
+    <div class="container">
+        <div class="guess-Section">
+            <div class="paragraph_section">
+                <p>The computer have selected a certain number. You have 10 chances to guess the number correctly otherwise the game will be over. </p>
+            </div>
+            <br>
+            <div class="form_section">
+                <form>
+                    <label for="fname">Can you guess the number:</label><br>
+                    <input type="text" id="guess_num" name="num_guess"><br>
+                    <input type="button" onclick="getGuess()"  class="guess_btn" id="btn_guess" value="Guess" >
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <br>
+    <div class="wrongGuess">
+        <p id = "guessCount">Total Guess remaining: </p>
+        <p ><span id="prev_guess">Your Previous Guesses: </span></p>
+        <p id="wrong">"Wrong Guess"</p>
+        <p id="correct">"Correct Guess!!"</p>
+        <div class="resteatGame">
+            <button class="startAgain_btn" onclick="location.reload()">Start Again</button>
+        </div>
+    </div>
+    
+    <script src="guessTheNumber.js"></script>
+</body>
+</html>
