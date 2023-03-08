@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="header">
+        <h1 id="header_text">JavaScript Projects</h1>
+    </div>
+    <!-- card section -->
+    <section class="card-section">
+        <div class=" flex_card container">
+            <div class="card">
+              <img src="img/gussethenum.png" alt="Card image" class="_image">
+              <hr>
+              <h3 class="card-h3 flex">Guess The Number</h3>  
+              <p>Guess the Number is a classic game in which the computer generates a random number between 1 to 100 and the player has to guess the number within 10 chances. The player can make their guesses by inputting a number and the computer will provide feedback on whether the guess is too high or too low.</p>
+              <input type="button" name="View Project" value="View Project" class="_btn" onclick="guessTheNumPage()">
+              
+            </div>   
+            <div class="card">
+              <img src="img/hangman" alt="Card image" class="_image">
+              <hr>
+              <h3 class="card-h3 flex">Hang Man</h3>
+              <p>Hangman is a classic word-guessing game where one player thinks of a word and the other player tries to guess the word by suggesting letters. The word is represented by a series of blank spaces, with each blank representing a letter in the word. The player guesses one letter at a time, and if the letter is in the word, it is revealed in its correct position.</p>
+              <input type="button" name="View Project" value="View Project" class="_btn" onclick="gurssTheNumPage()">
+            </div>   
+            <!-- <div class="card">
+              <img src="img/gears-5193383.png" alt="Card image">
+              <hr>
+              <h3 class="card-h3 flex">Something else</h3>
+              <p>System analysis and design refers to the process of studying a business or organizational system with the intention of designing a new or improved system that will enhance the organization's effectiveness and efficiency</p>
+              <button>View Project</button>
+            </div>  -->
+        </div>
+    </section>   
     
     <script src="index.js"></script>
 </body>
