@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hangman.css">  
+</head>
+<body>
+    <div class="header">
+        <h1 id="header_text">JavaScript Projects</h1>
+    </div>
+
+    <div class="themePicker_screen">
+        <div class="game_screen">
+            <h1 class="theme">Pick a Theme</h1><br>
+            <div class="themePicker">
+                <button class="theme_btn1 theme_btn" onclick="clickme()">Mix Of All</button>
+                <button class="theme_btn2 theme_btn" onclick="clickme()">Countries and Cities</button>
+                <button class="theme_btn3 theme_btn" onclick="clickme()">Sports Team And Athletes</button>
+                <button class="theme_btn4 theme_btn" onclick="clickme()">Animal</button>
+                <button class="theme_btn5 theme_btn" onclick="clickme()">Famous People</button>
+                <button class="theme_btn6 theme_btn" onclick="clickme()">Movies</button>
+            </div>
+        </div>
+    </div>
+    <div class="mainGame_screen">
+        <div class="game_main">
+        
+            <button class="just" onclick="myClick()">Click Me</button>
+        </div>
+    </div>
+
+
+    <script src="hangman.js"></script>
+</body>
+</html>

@@ -16,15 +16,15 @@ body{
 }
 .header {
     position: sticky;
-  top: 0;
-    background-color: rgba(87, 16, 163, 0.8);
+    top: 0;
+    background-color: #5710a3cc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
   
 #header_text {
     text-align: center;
-    font-size: 36px;
+    font-size: 60px;
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     opacity: 0.8;

@@ -5,6 +5,10 @@ function guessTheNumPage(){
     window.location.href = "GuessTheNumber.html";
 }
 
+function hangMan(){
+    window.location.href = "hangman.html";
+}
+
 
 
 
