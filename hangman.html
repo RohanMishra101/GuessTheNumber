@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hang Man</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="guessTheNumber.css"> -->
     <link rel="stylesheet" href="hangman.css">  
 </head>
 <body>
     <div class="header">
-        <h1 id="header_text">JavaScript Projects</h1>
+        <h1 id="header_text"><a href="index.html">JavaScript Projects</a></h1>
     </div>
 
     <div class="themePicker_screen">
@@ -18,22 +19,33 @@
             <h1 class="theme">Pick a Theme</h1><br>
             <div class="themePicker">
                 <button class="theme_btn1 theme_btn" onclick="clickme()">Mix Of All</button>
-                <button class="theme_btn2 theme_btn" onclick="clickme()">Countries and Cities</button>
+                <button class="theme_btn2 theme_btn" onclick="countryCity()">Countries and Cities</button>
                 <button class="theme_btn3 theme_btn" onclick="clickme()">Sports Team And Athletes</button>
                 <button class="theme_btn4 theme_btn" onclick="clickme()">Animal</button>
-                <button class="theme_btn5 theme_btn" onclick="clickme()">Famous People</button>
-                <button class="theme_btn6 theme_btn" onclick="clickme()">Movies</button>
+                <button class="theme_btn5 theme_btn" onclick="clickme()">Movies</button>
+                <button class="theme_btn6 theme_btn" onclick="clickme()">Custom</button>
             </div>
         </div>
     </div>
     <div class="mainGame_screen">
-        <div class="game_main">
-        
-            <button class="just" onclick="myClick()">Click Me</button>
+        <div class="game_main">    
+            <div class="img1">
+                <img src="img/gussethenum.png" alt="" width="450px" height="500px">
+            </div>
+            <br>
+            <div class="hangman">
+                <div class="givenWord">
+                    <h1>Hello</h1>
+                    <hr id="smallhr">
+                </div>
+                
+            </div>
         </div>
+        <button class="just" onclick="myClick()">Click Me</button>  
     </div>
-
-
+    
+    <button class="returnHome_btn" onclick="returnHome()">Return Home</button>
+    <script src="guessTheNumber.js"></script>
     <script src="hangman.js"></script>
 </body>
 </html>
