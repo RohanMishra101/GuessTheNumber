@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="hangman.css">  
 </head>
 <body>
+    <!-- Top Header -->
     <div class="header">
         <h1 id="header_text"><a href="index.html">JavaScript Projects</a></h1>
     </div>
-
+    <!-- Disctipton Section -->
+    <!-- Theame Chooser -->
     <div class="themePicker_screen">
         <div class="game_screen">
             <h1 class="theme">Pick a Theme</h1><br>
@@ -27,6 +29,7 @@
             </div>
         </div>
     </div>
+    <!-- Main game Screen -->
     <div class="mainGame_screen">
         <div class="game_main">    
             <div class="img1">
@@ -35,10 +38,15 @@
             <br>
             <div class="hangman">
                 <div class="givenWord">
-                    <h1>Hello</h1>
-                    <hr id="smallhr">
+                    <h1>Hello</h1>   
                 </div>
-                
+                <div class="textBox">
+                    <form>
+                        <label for="fname" id="textWord">Can you guess the word:</label><br>
+                        <input type="text" id="guess_word" name="num_guess"><br>
+                        <input type="button" onclick=""  class="wordGuess_Btn" id="btn_guess" value="Guess" >
+                    </form>
+                </div>
             </div>
         </div>
         <button class="just" onclick="myClick()">Click Me</button>  
