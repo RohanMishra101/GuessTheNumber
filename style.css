@@ -35,14 +35,6 @@ body{
     color: #ffffff;
 }
   
-/* 
-#header_text{
-    background-color: #0a2342;
-    padding: 0.4em;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-} */
 /* Card Section */
 
 .card-section{
@@ -110,7 +102,6 @@ body{
   ._btn:hover {
     background-color: #1d2b53;
   }
-  
 /* Card Section */
   
 /* Responsive section */
