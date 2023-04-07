@@ -1,3 +1,29 @@
+.pageNotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      height: 50%;
+}
+.pageNotFound{
+    display: none;
+}
+#constructionTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* .actualGame{
+    display: block;
+} */
+
+/* Web CSS */
 .game_screen{
     display: flex; 
     justify-content: center;
@@ -62,21 +88,13 @@
     padding-left: 300px;
     width: 60%;
 }
-/* .hangman{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    /* border: 1px solid blue; */
-    /* width: 60%;* */
-/*} */
 .hangman {
     /* border: 1px solid black; */
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items:center;
-    padding-top: 150px;
+    padding-top: 60px;
     padding-right: 450px;
     width: 60%;
 }
@@ -85,6 +103,9 @@
     /* border: 1px solid red; */
     font-size: 55px;
     font-weight: 600;
+}
+#WordCount{
+    margin: -100px 0px 0px 80px;
 }
 .textBox{
     margin-top: 30px;
@@ -130,7 +151,7 @@ input[type=text] {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .theme{
         margin-top: 30px;
         font-size: 28px;
@@ -145,6 +166,7 @@ input[type=text] {
         height: 65px;
         font-size: 18px;
     }
+    
 }
 @media only screen and (min-width: 600px) and (max-width: 760px) {
     .themePicker {
@@ -178,4 +200,74 @@ input[type=text] {
     .themePicker {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+  } */
+
+@media only screen and (max-width: 425px) {
+    .theme{
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    .themePicker {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+    .theme_btn{
+        width: 240px;
+        height: 65px;
+        font-size: 18px;
+    }
+    .game_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+        /* border: 5px solid blue; */
+    }
+    .img1 {
+      border: 1px solid red;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .img1 img{
+      width: 400px;
+      height: 450px;
+    }
+    
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .themePicker {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .theme{
+        margin-top: 30px;
+    }
+    .theme_btn{
+        width: 340px;
+        height: 90px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .themePicker {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .theme{
+        margin-top: 80px;
+    }
+    .theme_btn{
+        width: 300px;
+        height: 90px;
+        font-size: 25px;
+    }
+}
+    
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .themePicker {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
