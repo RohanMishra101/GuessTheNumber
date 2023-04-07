@@ -24,8 +24,55 @@
 
         <p><a href="https://www.youtube.com/watch?v=i3jEGoAjWno" target="_blank">Click Me</a></p>
     </div>
+
+    <div class="pageNotFound">
+        <h1 id="constructionTag">SITE UNDER CONSTRUCTION!!</h1>
+        <p>DELAYED DUE TO ENORMOUS LACK OF KNOWLEDGE</p>
+        
+        <p>-Developer</p>
+        <br>
+
+        <p><a href="https://www.youtube.com/watch?v=i3jEGoAjWno" target="_blank">Click Me</a></p>
+    </div>
     <!-- Disctipton Section -->
     <!-- Theame Chooser -->
+    <section class="actualGame">
+        <div class="themePicker_screen">
+            <div class="game_screen">
+                <h1 class="theme">Pick a Theme</h1><br>
+                <div class="themePicker">
+                    <button class="theme_btn1 theme_btn" onclick="clickme()">Mix Of All</button>
+                    <button class="theme_btn2 theme_btn" onclick="countryCity()">Countries and Cities</button>
+                    <button class="theme_btn3 theme_btn" onclick="clickme()">Sports Team And Athletes</button>
+                    <button class="theme_btn4 theme_btn" onclick="clickme()">Animal</button>
+                    <button class="theme_btn5 theme_btn" onclick="clickme()">Movies</button>
+                    <button class="theme_btn6 theme_btn" onclick="clickme()">Custom</button>
+                </div>
+            </div>
+        </div>
+        <!-- Main game Screen -->
+        <div class="mainGame_screen">
+            <div class="game_main">    
+                <div class="img1">
+                    <img src="img/gussethenum.png" alt="" width="450px" height="500px">
+                </div>
+                <br>
+                <div class="hangman">
+                    <div class="givenWord">
+                        <h1>Hello</h1>   
+                    </div>
+                    <div class="textBox">
+                        <form>
+                            <label for="wordCount" id="WordCount">word Count : </label>
+                            <br>
+                            <label for="guessTheWordText" id="textWord">Can you guess the word:</label><br>
+                            <input type="text" id="guess_word" name="num_guess"><br>
+                            <input type="button" onclick="checkGuess()"  class="wordGuess_Btn" id="btn_guess" value="Guess" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <button class="just" onclick="myClick()">Click Me</button>  
     <section class="actualGame">
         <div class="themePicker_screen">
             <div class="game_screen">
