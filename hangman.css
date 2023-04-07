@@ -11,7 +11,7 @@
       height: 50%;
 }
 .pageNotFound{
-    display: none;
+    display: block;
 }
 #constructionTag{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,9 +19,9 @@
     font-weight: 700;
 }
 
-/* .actualGame{
-    display: block;
-} */
+.actualGame{
+    display: none;
+}
 
 /* Web CSS */
 .game_screen{
