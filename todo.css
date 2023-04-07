@@ -5,9 +5,111 @@
 }
 
 .mainTODOContainer{
-    height:90vh;
+    /* height:90vh; */
     /* background-color: white; */
     max-width: 70%;
     margin: 0 auto;
 }
+#todo_frame{
+    background: #2b2d42;
+    height: 20vh;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input[type="text"] {
+    border: none;
+    /* border-bottom: 2px solid #ccc; */
+    border-radius: 18px;
+    padding: 15px;
+    width: 500px;
+    background-color: #222333;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: none;
+    outline: none;
+}
+  
+/* input[type="text"]:focus {
+    border-bottom: 2px solid #7C50AF; 
+    box-shadow: 0px 1px 0px #7C50AF;
+} */
+
+input[type = "button"]{
+    background-color: #ef233c;
+    border: none;
+    border-radius: 13px;
+    width: 170px;
+    padding: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    box-shadow: none;
+    outline: none;
+}
+input[type = "button"]:hover{
+    background-color: transparent;
+    border: 2px solid #ef233c;
+    color: #ef233c;
+}
+
+
+.todo_container{
+    width: 70%;
+    margin: 0 auto;
+    background: rgb(228, 232, 232);
+    padding: 20px;
+}
+ul li{
+    list-style: none;
+}
+.list_todos{
+    width: 70%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 12rem, 1rem;
+    
+}
+.list_todos li{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove_task{
+    padding: 2px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+}
+.list_todos li div{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+}
+.list_todos .complete{
+    text-decoration: line-through;
+}
+input[type = 'checkbox']{
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid red;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+input[type = 'checkbox']::before{
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E");
+}
+
 

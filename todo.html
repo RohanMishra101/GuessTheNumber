@@ -14,7 +14,39 @@
     </div>
 
     <div class="mainTODOContainer">
-      
+      <form action="" id="todo_frame">
+        <input type="text" name="todo_name" placeholder="e.g. Padhle Bhai" id="textBox">
+        <input type="button" name="Add-Task" id="add_Task" value="Add Task">
+      </form>
     </div>
+
+
+    <section class="todo_container">
+      <div class="container_todo" id="main_content">
+        <ul class="list_todos">
+          <li>
+            <div>
+              <input type="checkbox" name="tasks" id="1">
+              <span>Task 1</span>
+            </div>
+            <button title="Remove" class="remove_task">x</button>
+          </li>
+        </ul>
+      </div>
+      <div class="container_todo" id="main_content">
+        <ul class="list_todos">
+          <li class="complete">
+            <div>
+              <input type="checkbox" name="tasks" id="2">
+              <span>Task 2</span>
+            </div>
+            <button title="Remove" class="remove_task">x</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    
+    <script src="todo.js"></script>
 </body>
 </html>
